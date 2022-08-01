@@ -1,0 +1,23 @@
+You should use linux distro for evaluation of the program as we are using cetain libraries which are
+present in linux. Program won't run in windows environment.
+Steps to run code -
+    1. These are files for problem 2
+
+        a.  server.c          
+        b.  client.c	      
+        
+    2.  Commands to Compile and run the program - 
+    
+    	To compile  the program type the following command-
+			gcc server.c -o server -lpthread 
+			gcc client.c -o client 
+		To run the program 
+			./server <Port-No>
+			./client <IP-Address> <Port-No>
+Note:
+	Please make sure that necessary files like login_data.txt, Balances.txt, etc. are there for 
+	proper functioning of the program.
+	Unexpected input may produce unexpected output.
+If program doesn't run (Due to unforseeken reasons), please let us know so that we can show the 
+working in our system.
+

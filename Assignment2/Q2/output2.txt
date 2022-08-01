@@ -1,0 +1,33 @@
+-----------------------OUTPUT FILE----------------------------------
+
+Book Depo visits for BTech book issual = 3 
+Book Depo visits for MTech book issual = 4 
+Book Depo visits for Phd   book issual = 4 
+Number of times the librarian goes to search entire book depo = 11
+-----------------------------------------------------------------------
+
+BTech maximum request for subject = B3 
+MTech maximum request for subject = M1 
+Phd   maximum request for subject = P1 
+-----------------------------------------------------------------------
+
+Books left in BTech Tray
+
+Book_id = B1_2 Subject_id = B1
+
+-----------------------------------------------------------------------
+
+Books left in MTech Tray
+
+Book_id = B1_2 Subject_id = B1
+Book_id = M1_4 Subject_id = M1
+Book_id = M3_2 Subject_id = M3
+
+-----------------------------------------------------------------------
+
+Books left in Phd Tray
+
+Book_id = P1_4 Subject_id = P1
+Book_id = P3_2 Subject_id = P3
+
+----------------------------END FILE---------------------------------------

@@ -1,0 +1,12 @@
+Steps to run code -
+    1. These are files for problem 3
+
+        1.  A2_1.cpp  
+        2.  input.txt   input file 
+        2.  Makefile        for compilation and creation of output file 
+    
+    2.  Commands to Compile and run the program - 
+    	To run the program(in linux) type the following command-
+   	 make
+        ./A2_1         
+

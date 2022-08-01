@@ -1,0 +1,35 @@
+Steps to run code -
+    1. These are files for three problem
+
+        a.  A1_1.cpp        for problem 1  
+        b.  A1_2.cpp        for  problem 2 
+        c.  A1_3.cpp        for problem 3 
+        d.  arrival.txt     used in problem 1 you can change file name in main fumction
+        e.  input.txt       used in problem 3 you can change the file name in read data function 
+        c.  Makefile        for compilation and creation of output file 
+    
+    Commands to Compile and run the program - 
+    
+    we have created make file after running command for make an A1_1,A1_2 and A1_3 executable file created 
+
+    for run the program type command-
+    make
+    ./A1_1          // for executing problem 1 
+    ./A1_2          // for executing problem 2
+    ./A1_3          // for executing problem 3   
+--------------------------------------------------------------------------------------------
+Code explanation - 
+Problem 2 code explantion           
+
+1.  In problem 2 cli ask for number of friend N=?
+2.  we create N unique token number for N friends  
+3.  we have created a thread(operation_genrator) which genrating the random token number and operation type(read/ write) and push in a priority queue(priority queue is used so that we can alaway pop the operation which have minimum token number) 
+4. we have created a helper thread which take care of order of operation and remove operations from priority queue when operation thread is created 
+5.  every time when a write operration come and have highest priority(mens min token number) we wait for read count=0.
+6.  if read count is 0 write operation enters in semaphore and lock the semaphore
+7.  read operation wait for write semaphore (when write semaphore is lock no reader can enter in critical section) 
+8.  if write semaphore is not lock then reader enter in critical section and increase the read count by 1 after removing form critical section it decrease the read count( we synchronize read count by using mutex)
+9.  whren read count is 0 it unlock the write semaphore so that write operation can enter in critical section 
+10.  for read and write operation we create threads
+11. At one time only ine write thread can be created
+12. At one time maximum N read thread can be created

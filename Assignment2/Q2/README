@@ -1,0 +1,32 @@
+Steps to run code -
+    1. These are files for problem 3
+
+        1.  A2_2.cpp  
+        2.  issue.txt       input file
+        2.  Makefile        for compilation and creation of output file 
+    
+    2.  Commands to Compile and run the program - 
+    	To run the program(in linux) type the following command-
+   	 make
+        ./A2_2         
+
+
+
+CODE EXPLANATION:
+	
+   *Working:
+       1. Read the input file
+       2. For each requestd book, we check if book is available in the respective tray or not.
+       3. If it is available, we simply issue it else we follow respective steps 
+       a. For BTech Course:
+            i.  Here we implement tray as queue data structure.
+	    ii. if tray is full then we remove the first element of the tray (endif)
+	    iii.Insert the element at the last of the tray 
+       b. For MTech Course:
+	    i.  Here we maintain a data structure storing the freqeuncy of each book
+	    ii. if tray is full then we remove the element with least frequency (endif)
+	    iii.Insert the element at the last of the tray 
+       c. For Phd Course:
+	    i.  Here we implement tray as queue data structure.
+	    ii. if tray is full then we remove the first element of the tray as it will be the one that was least recently used (endif)
+	    iii.Insert the element at the last of the tray 			

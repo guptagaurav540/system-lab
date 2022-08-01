@@ -1,0 +1,22 @@
+-----------------------OUTPUT FILE------------------------------------------
+
+Performance of Aman = 45500
+Performance of Raj  = 36500
+Performance of Alok = 45500
+
+-----------------------------------------------------------------------
+
+Best manager is : Aman or Alok
+
+
+---------------------------------------------------------------
+Money wasted by Aman = 0
+Money wasted by Raj  = 9000
+Money wasted by Alok = 0
+
+---------------------------------------------------------------
+Requests denied by Aman = 0
+Requests denied by Raj  = 1
+Requests denied by Alok = 0
+
+-------------------------END FILE-------------------------------
